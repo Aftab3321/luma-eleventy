@@ -583,7 +583,7 @@
         line-height: 37px;
       }
       .footer-wrapper .footer-navigation {
-        margin-top: -31px;
+        margin-top: 0px;
       }
       .product .products-header {
         grid-template-columns: 40px 266px;

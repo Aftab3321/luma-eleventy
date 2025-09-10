@@ -291,6 +291,7 @@ p.blog-metadata {
 .small-space {
   min-height: 60px;
 }
+
 /* Responsive rules */
 @media (max-width: 991px) {
   .desktop-header {

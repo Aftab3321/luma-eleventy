@@ -202,8 +202,6 @@
         flex-direction: column;
         gap: 25px;
     }
-    .product-image .product-image--wrapper {
-    }
     .product-image .product-image--wrapper .image {
         max-width: 268px;
         border-radius: 10px;

@@ -90,6 +90,28 @@
             grid-template-columns: repeat(auto-fit, minmax(321px, 1fr));
             gap: 20px;
         }
+        .product .products-header {
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            padding-block-end: 30px;
+        }
+        .product .products-header .product-title {
+            writing-mode: sideways-lr;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+        .outlined-text {
+            color: #657323;
+            background-color: var(--text-primary-color);
+            background-clip: text;
+            -webkit-text-stroke-color: transparent;
+            -webkit-text-stroke-width: 6px;
+            -webkit-background-clip: text;
+        }
+        .product-image--wrapper {
+            min-height: 380px;
+        }
         /* Responsive rules */
         @media (max-width: 991px) {
             .desktop-header {

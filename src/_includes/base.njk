@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         :root {
-        --primary-color: #657323;
-        --text-primary-color: #c0c1ff;
-        --secondary-color: #262e01;
-        --font-family: "DM Sans";
-        --heading-font-size: 64px;
-        --subheading-size: 48px;
-        --text-font-size: 40px;
+            --primary-color: #657323;
+            --text-primary-color: #c0c1ff;
+            --secondary-color: #262e01;
+            --font-family: "DM Sans";
+            --heading-font-size: 64px;
+            --subheading-size: 48px;
+            --text-font-size: 40px;
         }
         .container {
             max-width: 1304px;
@@ -149,6 +154,9 @@
                 min-height: 113px;
             }
             .hero-section {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
                 padding-inline: 20px;
             }
             .hero-section-wrapper {
@@ -200,6 +208,14 @@
             .headers-wrapper {
                 max-height: 122px;
                 overflow: hidden;
+            }
+            .offcanvas nav {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero-section-wrapper {
+                padding-top: 20px;
             }
         }
         

@@ -5,6 +5,113 @@
     <meta name="description" content="{{ pageDescription }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
+    <style>
+        :root {
+        --primary-color: #657323;
+        --text-primary-color: #c0c1ff;
+        --secondary-color: #262e01;
+        --font-family: "DM Sans";
+        --heading-font-size: 64px;
+        --subheading-size: 48px;
+        --text-font-size: 40px;
+        }
+        .container {
+            max-width: 1304px;
+            width: 100%;
+            margin-inline: auto;
+        }
+        body {
+            display: grid;
+            grid-template-rows: 122px 1fr 105px;
+            background-color: var(--primary-color);
+        }
+        img {
+            width: 100%;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a,
+        span {
+            font-family: var(--font-family);
+        }
+        a {
+            text-decoration: none;
+            color: var(--text-primary-color);
+            font-size: var(--text-font-size);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            font-size: var(--text-font-size);
+            color: var(--text-primary-color);
+        }
+        .headers-wrapper {
+            max-height: 122px;
+            overflow: hidden;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-primary-color);
+            position: relative;
+            min-height: 198px;
+            gap: 103px;
+        }
+        .offcanvas {
+            position: fixed;
+            top: 0;
+            left: -255px;
+            width: 250px;
+        }
+        .mobile-header {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin-inline: auto;
+            min-height: 125px;
+        }
+        .mobile-header .logo {
+            max-width: 170px;
+        }
+        .hamburger {
+            font-size: var(--subheading-size);
+            cursor: pointer;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(321px, 1fr));
+            gap: 20px;
+        }
+        /* Responsive rules */
+        @media (max-width: 991px) {
+            .desktop-header {
+                display: none;
+            }
+            .mobile-header {
+                display: flex;
+            }
+            
+        }
+        @media (max-width: 576px) {
+            :root {
+                --heading-font-size: 38px;
+                --subheading-size: 33px;
+                --text-font-size: 28px;
+            }
+            .hero-section {
+                padding-inline: 20px;
+            }
+        }
+        
+    </style>
     <link
       rel="preload"
       as="style"

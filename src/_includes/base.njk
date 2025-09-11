@@ -22,7 +22,7 @@
         }
         body {
             display: grid;
-            grid-template-rows: 122px 1fr 105px;
+            grid-template-rows: 200px 1fr 81px;
             background-color: var(--primary-color);
         }
         img {
@@ -52,7 +52,7 @@
             color: var(--text-primary-color);
         }
         .headers-wrapper {
-            max-height: 122px;
+            max-height: 222px;
             overflow: hidden;
         }
         header {
@@ -63,6 +63,16 @@
             position: relative;
             min-height: 198px;
             gap: 103px;
+        }
+        nav {
+            display: flex;
+            gap: 80px;
+        }
+
+        .menu-left,
+        .menu-right {
+            display: flex;
+            gap: 15px;
         }
         .offcanvas {
             position: fixed;
@@ -128,6 +138,10 @@
                 --subheading-size: 33px;
                 --text-font-size: 28px;
             }
+            body {
+                grid-template-rows: 122px 1fr 81px;
+                background-color: var(--primary-color);
+            }
             .contact-section-wrapper {
                 padding-block: 40px 80px;
             }
@@ -182,6 +196,10 @@
             }
             .contact-section-wrapper {
                 padding-block: 40px 80px;
+            }
+            .headers-wrapper {
+                max-height: 122px;
+                overflow: hidden;
             }
         }
         

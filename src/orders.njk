@@ -61,6 +61,7 @@ pageDescription: "Luma is a website that sell vegan canned products"
 
     const myForm = event.target;
     const formData = new FormData(myForm);
+    formData.append({"product": product_name});
 
     fetch("/", {
         method: "POST",

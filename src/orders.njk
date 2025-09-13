@@ -56,35 +56,35 @@ pageDescription: "Luma is a website that sell vegan canned products"
             }
         }
     })
-    const handleSubmit = event => {
-    event.preventDefault();
+    // const handleSubmit = event => {
+    // event.preventDefault();
 
-    const myForm = event.target;
-    const formData = new FormData(myForm);
+    // const myForm = event.target;
+    // const formData = new FormData(myForm);
 
-    fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-    })
-        .then(() => formSuccessful())
-        .catch(error => formError(error));
-    };
+    // fetch("/", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //     body: new URLSearchParams(formData).toString()
+    // })
+    //     .then(() => formSuccessful())
+    //     .catch(error => formError(error));
+    // };
 
-    document.querySelector("form").addEventListener("submit", handleSubmit);
-    function formSuccessful() {
-        const paragraph = document.createElement('p');
-        paragraph.classList.add("successfull");
-        paragraph.textContent = "Form has been submitted successfully";
-        const formContainer = document.querySelector("#submit-order");
-        formContainer.appendChild(paragraph);
-    } 
-    function formError(err) {
-        const paragraph = document.createElement('p');
-        paragraph.classList.add("error");
-        paragraph.textContent = "There was an error submitting the form.";
-        const formContainer = document.querySelector("#submit-order");
-        formContainer.appendChild(paragraph);
-        console.error(err);
-    }
+    // document.querySelector("form").addEventListener("submit", handleSubmit);
+    // function formSuccessful() {
+    //     const paragraph = document.createElement('p');
+    //     paragraph.classList.add("successfull");
+    //     paragraph.textContent = "Form has been submitted successfully";
+    //     const formContainer = document.querySelector("#submit-order");
+    //     formContainer.appendChild(paragraph);
+    // } 
+    // function formError(err) {
+    //     const paragraph = document.createElement('p');
+    //     paragraph.classList.add("error");
+    //     paragraph.textContent = "There was an error submitting the form.";
+    //     const formContainer = document.querySelector("#submit-order");
+    //     formContainer.appendChild(paragraph);
+    //     console.error(err);
+    // }
   </script>

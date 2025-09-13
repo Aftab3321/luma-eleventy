@@ -141,6 +141,31 @@
             background: #ff8e8e;
             color: red;
         }
+        .terms-section-wrapper, .privacy-section-wrapper, .orders-section-wrapper, .blog-section-wrapper, .post-section-wrapper {
+            padding-block: 60px 80px;
+            padding-inline: 60px;
+        }
+        .order-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .order-form input[type="text"], .order-form input[type="number"], .order-form textarea {
+            background-color: var(--text-primary-color);
+            color: var(--primary-color);
+            max-width: 552px;
+            width: 100%;
+            border-radius: 10px;
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: var(--text-font-size);
+            line-height: 54px;
+            letter-spacing: 0;
+            border: none;
+            outline: none;
+            margin-bottom: 16px;
+            padding: 16px 16px;
+        }
         /* Responsive rules */
         @media (max-width: 991px) {
             .desktop-header {
